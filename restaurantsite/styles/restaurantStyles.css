@@ -1,0 +1,50 @@
+/*
+  CSS Style sheet for restaurant site
+*/
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
+header, footer{
+  text-align: center;
+}
+header{
+  font-family: 'Shadows Into Light', cursive;
+  /*put space for the header/restaurant name*/
+  margin: 25px;
+}
+footer {
+
+}
+/*In case I use float left or right*/
+.clear-float {
+  clear:both;
+}
+nav {
+  border-top: thin solid black;
+  border-bottom: thin solid black;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+nav a{
+  background-color: #96BBBB;
+  color: #414535;
+  padding: 2px 5px;
+  margin: 5px 12px;
+
+}
+nav a:active {
+  text-decoration: none;
+}
+nav a:hover {
+  font-weight: bold;
+}
+nav a:visited {
+  background-color: #618985;
+  color: #FFF;
+}
+/*made the javascript disabled warning stand out for users to notice*/
+.warning {
+  background-color: yellow;
+  text-align: center;
+  margin: 10px 0;
+}

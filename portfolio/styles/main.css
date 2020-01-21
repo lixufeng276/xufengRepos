@@ -1,0 +1,81 @@
+/*
+  Creator: Xufeng Li
+  Date Created: 01/13/2020
+  Date Modified: 01/13/2020
+*/
+body {
+  font-family: sans-serif;
+  color: #113537;
+  background-color: #FFF9EC;
+  max-width: 900px;
+  margin: 0 auto;
+}
+header, footer {
+    background-color: #5296A5;
+    color: #FFF9EC;
+    height: 100px;
+    text-align: center;
+    padding: 30px 10px 20px 10px;
+}
+h1 {
+  font-size: 2.5em;
+}
+nav {
+  border-top: 1px solid #113537;
+  border-bottom: 1px solid #113537;
+  margin-top: 4px;
+}
+/* comment out link style
+a {
+  font-family: monospace;
+  text-decoration: underline;
+  font-weight: none;
+}
+a:link {
+  color: #82DDF0;
+}
+
+a:visited {
+  color: #5296A5;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #00c;
+}
+
+a:active {
+  font-weight: bold;
+}
+*/
+nav a {
+  background-color: #5296A5;
+  color: #FFF9EC;
+  padding: 8px;
+  border: thin solid #113537;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 20px;
+  width: 100px;
+  float: left;
+}
+article img {
+  float: left;
+}
+.clear-float {
+  clear:both;
+}
+.right-content {
+  float: left;
+}
+nav a:visited{
+  color: #e4c3ad;
+}
+nav a:hover {
+  background-color: #FFF9EC;
+  color: #5296A5;
+}
+nav a:active{
+  font-weight: bold;
+}

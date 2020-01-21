@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Hubble's Menu</title>
+    <!--supoorted icon from w3schools.com since bootstrap doesn't have one-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!---->
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css"/>
+    <!--bootstrap CDN link from https://getbootstrap.com/docs/4.1/getting-started/introduction/-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+      .news {
+        background-color: #F2E3BC;
+      }
+      section {
+        margin-top: 10px;
+        padding: 15px;
+        background-color: #F2E3BC;
+        border-radius: 10px;
+      }
+      .item {
+        text-align: center;
+        padding-bottom: 15px;
+      }
+      .entree, .drinks {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 10px;
+      }
+      .drinkitem {
+        text-align: center;
+        padding-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+    <!--Header, nav, and footer are kept consistent across
+    each .html file-->
+      <header>
+        <div class="jumbotron news">
+          <div id="news" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <!--I added more text to the first slide to keep the carousel size
+              consistent for better flow in the jumbotron-->
+                <h3>We're opening a new location! Check back soon for more details!</h3>
+              </div>
+
+              <div class="carousel-item">
+                <h3>We're rolling out our seasonal menu, with special options for this season.</h3>
+              </div>
+
+              <div class="carousel-item">
+                <h3>The Drink of the Month is SG Special Brew.</h3>
+              </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#news" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#news" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <h1 id="name">The Hubble Caf&eacute</h1>
+      </header>
+
+      <nav>
+          <a class="btn badge-pill" href="index.html"><i class="fa fa-home"></i> Home</a>
+          <a class="btn badge-pill" href="menu.html"><i class="fa fa-bars"></i> Menu</a>
+          <a class="btn badge-pill" href="contact.html"><i class="fa fa-envelope"></i> Contact Us</a>
+      </nav>
+
+    <section>
+      <!--Notifies user when JavaScript is disable and that content is best viewed with JS-->
+      <noscript>
+        <div class="warning">
+          Warning: JavaScript is currently disabled, this page is best viewed with JavaScript enabled!
+        </div>
+      </noscript>
+<!--Use justify content center to get the title in the center-->
+          <div class="entree row justify-content-center">
+            Entr&eacutees
+          </div>
+<!--made the entree items into one row so that when the screen gets smaller
+it will not compress the items by row but naturally by making xs and sm screen two items each
+and the rest is three items on each row-->
+            <div class="row">
+                <div class="item col-6 col-sm-6 col-md-4 col-lg-4">
+                  <b style="font-size: 1.05em;">Burger and Fries</b><br/>
+                  An American Classic!<br/>
+                  Your choice - with or without cheese<br/>
+                  Pickle, onion, tomato, and lettuce<br/>
+                  Served with our famous thick cut french fries<br/>
+                  $7.95<br/>
+                </div>
+
+                <div class="item col-6 col-sm-6 col-md-4 col-lg-4">
+                  <b style="font-size: 1.05em;">Hot Dog and Chips</b><br/>
+                  A Summer Classic!<br/>
+                  Your choice - white or wheat bun<br/>
+                  Relish, mustard, and ketchup<br/>
+                  Served with our house-made chips<br/>
+                  $7.95<br/>
+                </div>
+
+                <div class="item col-6 col-sm-6 col-md-4 col-lg-4">
+                  <b style="font-size: 1.05em;">Italian Sausage and Peppers</b><br/>
+                  An All-Time Favorite!<br/>
+                  Your choice - mild or spicy Cole Slaw<br/>
+                  Served with garlic mashers<br/>
+                  $10.95<br/>
+                </div>
+
+                <div class="item col-6 col-sm-6 col-md-4 col-lg-4">
+                  <b style="font-size: 1.05em;">Tenderloin Sandwich and Chips</b><br/>
+                  Really Hits the Spot!<br/>
+                  Plain or sesame bun<br/>
+                  Pickle, onion, tomato, and lettuce<br/>
+                  Served with our house-made chips<br/>
+                  $8.95<br/>
+                </div>
+
+                <div class="item col-6 col-sm-6 col-md-4 col-lg-4">
+                  <b style="font-size: 1.05em;">House Salad</b><br/>
+                  On the Lighter Side<br/>
+                  Youre choice - white or without cheese<br/>
+                  Icebery lettuce, tomatoes, peppers<br/>
+                  Thousand Island or Ranch Dressing<br/>
+                  Served with a dinner roll<br/>
+                  $6.95<br/>
+                </div>
+
+                <div class="item col-6 col-sm-6 col-md-4 col-lg-4">
+                  <b style="font-size: 1.05em;">Brisket Sandwich and Fries</b><br/>
+                  A Taste of Texas!<br/>
+                  Smoked Brisket on thick-cut<br/>
+                  Texas Toast<br/>
+                  Cole Slaw<br/>
+                  Served with our famous thick-cut french fries<br/>
+                  $7.95<br/>
+                </div>
+            </div>
+
+            <div class="drinks row justify-content-center">
+              Beverages
+            </div>
+<!--drink menu should be on a separate row from the entrees-->
+            <div class="row">
+              <div class="drinkitem col-3">
+                <b style="font-size: 1.05em;">Root Beet</b><br/>
+                $3.00
+              </div>
+              <div class="drinkitem col-3">
+                <b style="font-size: 1.05em;">Bottled Water</b><br/>
+                $1.25
+              </div>
+              <div class="drinkitem col-3">
+                <b style="font-size: 1.05em;">Lemonade</b><br/>
+                $1.00
+              </div>
+              <div class="drinkitem col-3">
+                <b style="font-size: 1.05em;">Iced Tea</b><br/>
+                $1.25
+              </div>
+            </div>
+      </section>
+
+      <footer>
+        <hr/>
+        <p>Address: 1205 Hubble Street, Brooklyn, New York, 11201</p>
+        <p>Telephone: (646) 301-6362</p>
+      </footer>
+    </div>
+    <!--script CDN links from https://getbootstrap.com/docs/4.1/getting-started/introduction/-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
