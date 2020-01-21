@@ -15,7 +15,7 @@ function play() {
   } else if (Number(startBet) < 1) {
     alert("Error Message: Please put in more money!");
   } else {
-    //once the correct input is set start rolling dice
+    //once the correct input is set, start rolling dice
     var betPool = Number(startBet)
     var max = Number(startBet);
     var totalRolls = 0;
@@ -41,7 +41,7 @@ function play() {
     document.getElementById("show").style.display = "block";
     document.getElementById("rolls").innerText = totalRolls;
     document.getElementById("rollCountAtHigh").innerText = rollHigh;
-    //this takes care of the results displayed and inputting a decimal number
+    //this takes care of the results displayed when inputting a decimal number
     if (Number(startBet) - Math.floor(Number(startBet)) > 0) {
       document.getElementById("startBet").innerText = "$" + Number(startBet);
       document.getElementById("amountWon").innerText = "$" + max;
